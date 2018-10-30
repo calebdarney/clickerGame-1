@@ -11,6 +11,11 @@
 #ach3{
   visibility:hidden;
 }
+#ach4{
+  visibility:hidden;
+
+}
+
   
 </style>  
 </head>
@@ -22,9 +27,10 @@
 <center><button type="button" onClick = "clickme()">CLICK ME</button></center>
 <br>
 <center><a id = "total">Total Clicks: 0</a></center>
-<img id="ach1" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "100">
-<img id="ach2" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "100">
-<img id="ach3" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "100">
+<img id="ach1" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "150">
+<img id="ach2" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "150">
+<img id="ach3" src="https://cdn1.vectorstock.com/i/1000x1000/24/30/smiling-monkey-face-cartoon-character-vector-20172430.jpg" width = "150">
+<img id="ach4" src="https://cdn2.vectorstock.com/i/1000x1000/61/11/monkey-face-vector-17736111.jpg" width = "150>
 <script>
   var totalClick = 0;
   var totaalClick = 1;
@@ -40,6 +46,9 @@
     }
     if(totalClick == 15){
       alert("CONGRATS! HERE IS YOUR FINAL PRIZE!!!");document.getElementById("ach3").style.visibility="visible";
+    }
+    if(totalClick == 20){
+      alert("Secret Hidden Prize");document.getElementById("ach4").style.visibility="visible";
     }
     
   }  
